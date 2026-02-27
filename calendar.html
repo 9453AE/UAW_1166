@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAW Local 1166 · 2026 Calendar</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#19458c;
+  --blue-dark:#0d2d5e;
+  --blue-mid:#1e54a8;
+  --gold:#f5a623;
+  --gold-light:#ffc649;
+  --bg:#f2f2f7;
+  --card:#ffffff;
+  --text:#1d1d1f;
+  --text2:#6e6e73;
+  --text3:#aeaeb2;
+  --red:#ff3b30;
+  --green:#28a745;
+  --purple:#5856d6;
+  --border:rgba(0,0,0,0.07);
+  --shadow:0 2px 10px rgba(0,0,0,0.07);
+  --shadow-md:0 6px 24px rgba(0,0,0,0.10);
+  --r:14px;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;min-width:320px}
+
+/* ── HEADER ── */
+.hdr{
+  background:linear-gradient(150deg,var(--blue-dark) 0%,var(--blue) 55%,var(--blue-mid) 100%);
+  color:#fff;padding:44px 20px 52px;text-align:center;position:relative;overflow:hidden;
+}
+.hdr::before,.hdr::after{content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.04)}
+.hdr::before{width:320px;height:320px;top:-80px;right:-80px}
+.hdr::after{width:240px;height:240px;bottom:-100px;left:-50px}
+.hdr-logo{width:82px;height:82px;margin:0 auto 18px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.35))}
+.hdr-eyebrow{font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;opacity:.65;margin-bottom:8px}
+.hdr-title{font-size:42px;font-weight:800;letter-spacing:-1px;line-height:1.05;margin-bottom:6px}
+.hdr-title span{font-size:22px;font-weight:400;letter-spacing:0;opacity:.7;display:block;margin-top:4px}
+.hdr-sub{font-size:15px;opacity:.55;margin-bottom:36px}
+
+/* SUBSCRIBE CARD */
+.sub-card{
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--r);
+  padding:22px 24px;
+  max-width:460px;margin:0 auto;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.sub-card h3{font-size:16px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.sub-card p{font-size:13px;opacity:.72;line-height:1.5;margin-bottom:18px}
+.sub-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-gold{
+  flex:1;min-width:130px;
+  background:var(--gold);color:#1d1d1f;
+  border:none;border-radius:10px;padding:12px 14px;
+  font-size:13px;font-weight:700;cursor:pointer;
+  text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px;
+  transition:all .2s ease;
+}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-glass{
+  flex:1;min-width:130px;
+  background:rgba(255,255,255,.15);color:#fff;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:10px;padding:12px 14px;
+  font-size:13px;font-weight:600;cursor:pointer;
+  text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px;
+  transition:all .2s ease;
+}
+.btn-glass:hover{background:rgba(255,255,255,.25);transform:translateY(-1px)}
+
+/* ── MAIN ── */
+.main{max-width:680px;margin:0 auto;padding:24px 16px 60px}
+
+/* FILTER TABS */
+.tabs{display:flex;gap:8px;margin-bottom:28px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:20px;padding:8px 18px;
+  font-size:14px;font-weight:500;color:var(--text2);
+  cursor:pointer;white-space:nowrap;transition:all .18s ease;
+  box-shadow:var(--shadow);
+}
+.tab.on,.tab:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* SECTION */
+.section-head{
+  font-size:20px;font-weight:700;
+  color:var(--text);margin:36px 0 14px;
+  display:flex;align-items:center;gap:10px;
+}
+.section-icon{
+  width:34px;height:34px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:17px;flex-shrink:0;
+}
+.si-blue{background:rgba(25,69,140,.12)}
+.si-red{background:rgba(255,59,48,.1)}
+.si-green{background:rgba(40,167,69,.1)}
+.si-purple{background:rgba(88,86,214,.1)}
+
+.month-sep{
+  font-size:11px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--text3);
+  margin:22px 0 10px;
+}
+
+/* EVENT CARD */
+.card{
+  background:var(--card);border-radius:var(--r);
+  padding:16px 18px;margin-bottom:9px;
+  box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:14px;
+  border:1px solid var(--border);
+  transition:box-shadow .2s,transform .2s;
+}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-1px)}
+.card.recurring{background:linear-gradient(135deg,#eef2f8,#f5f8ff)}
+
+/* DATE BLOCK */
+.dblock{min-width:50px;text-align:center;flex-shrink:0}
+.dmon{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text3)}
+.dday{font-size:30px;font-weight:800;line-height:1;color:var(--text)}
+.drange{font-size:15px;font-weight:700;line-height:1.1;color:var(--text)}
+
+.vline{width:1px;height:48px;background:var(--border);flex-shrink:0}
+
+/* EVENT INFO */
+.einfo{flex:1;min-width:0}
+.badges{display:flex;gap:5px;margin-bottom:5px;flex-wrap:wrap}
+.badge{
+  font-size:10px;font-weight:700;padding:2px 8px;
+  border-radius:20px;display:inline-block;letter-spacing:.3px;text-transform:uppercase;
+}
+.bm{background:rgba(25,69,140,.1);color:var(--blue)}
+.bh{background:rgba(255,59,48,.1);color:var(--red)}
+.bb{background:rgba(40,167,69,.1);color:var(--green)}
+.br{background:rgba(88,86,214,.1);color:var(--purple)}
+.etitle{font-size:16px;font-weight:600;color:var(--text);margin-bottom:3px}
+.emeta{font-size:13px;color:var(--text2);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.emeta-dot{color:var(--text3)}
+
+/* ADD BUTTON */
+.btn-add{
+  background:var(--blue);color:#fff;
+  border:none;border-radius:8px;padding:9px 14px;
+  font-size:13px;font-weight:600;cursor:pointer;
+  white-space:nowrap;transition:all .18s ease;flex-shrink:0;
+}
+.btn-add:hover{background:var(--blue-mid);transform:translateY(-1px)}
+.btn-add:active{transform:translateY(0)}
+
+/* INFO BOX */
+.info-box{
+  background:rgba(25,69,140,.06);
+  border:1px solid rgba(25,69,140,.12);
+  border-radius:var(--r);
+  padding:14px 18px;margin-bottom:16px;
+  font-size:13px;color:var(--blue);line-height:1.5;
+}
+
+/* FOOTER */
+.ftr{
+  background:var(--blue-dark);color:rgba(255,255,255,.65);
+  padding:36px 24px;text-align:center;
+}
+.ftr-logo{width:52px;height:52px;margin:0 auto 14px;display:block;opacity:.5}
+.ftr-address{font-size:14px;line-height:1.8}
+.ftr-note{font-size:12px;opacity:.4;margin-top:14px}
+
+/* TOAST */
+.toast{
+  position:fixed;bottom:28px;left:50%;
+  transform:translateX(-50%) translateY(100px);
+  background:#1d1d1f;color:#fff;
+  padding:12px 26px;border-radius:24px;
+  font-size:14px;font-weight:500;
+  box-shadow:0 8px 30px rgba(0,0,0,.35);
+  transition:transform .3s cubic-bezier(.175,.885,.32,1.275);
+  z-index:999;pointer-events:none;white-space:nowrap;
+}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* SECTION VISIBILITY */
+.sec-meetings,.sec-holidays,.sec-benefits{transition:opacity .15s}
+.hidden{display:none!important}
+
+@media(max-width:500px){
+  .hdr-title{font-size:32px}
+  .card{flex-wrap:wrap}
+  .btn-add{width:100%}
+  .sub-btns{flex-direction:column}
+  .dblock{min-width:42px}
+  .dday{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="hdr">
+  <img class="hdr-logo" src="https://9453ae.github.io/UAW_1166/UAW%20White%20Logo.svg" alt="UAW Local 1166 Logo" onerror="this.style.display='none'">
+  <div class="hdr-eyebrow">United Automobile Workers</div>
+  <h1 class="hdr-title">Local 1166<span>2026 Official Calendar</span></h1>
+  <p class="hdr-sub">Kokomo, Indiana</p>
+
+  <div class="sub-card">
+    <h3>🔄 Subscribe &amp; Auto-Sync</h3>
+    <p>Add once — your calendar stays current automatically. When a meeting changes or is canceled, every subscribed member's calendar updates within minutes.</p>
+    <div class="sub-btns">
+      <a href="webcal://9453ae.github.io/UAW_1166/events.ics" class="btn-gold">
+        📅 Apple / iPhone
+      </a>
+      <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2F9453ae.github.io%2FUAW_1166%2Fevents.ics" target="_blank" rel="noopener" class="btn-glass">
+        Google Calendar
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ── MAIN ── -->
+<main class="main">
+
+  <!-- TABS -->
+  <div class="tabs" role="tablist">
+    <button class="tab on" onclick="filter('all')" role="tab">All Events</button>
+    <button class="tab" onclick="filter('meetings')" role="tab">Meetings</button>
+    <button class="tab" onclick="filter('holidays')" role="tab">Holidays</button>
+    <button class="tab" onclick="filter('benefits')" role="tab">Pay &amp; Benefits</button>
+  </div>
+
+  <!-- ── REGULAR MEETINGS ── -->
+  <div class="sec-meetings">
+    <h2 class="section-head">
+      <span class="section-icon si-blue">🗓</span> Regular Meetings
+    </h2>
+    <div class="info-box">
+      These meetings repeat on the same schedule every month. Click <strong>+ Add Series</strong> to add all occurrences to your calendar, or use <strong>Subscribe</strong> above to get everything at once.
+    </div>
+
+    <div class="card recurring" id="r1">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">1st<br>MON</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">Retiree Meeting</div>
+        <div class="emeta">5:00 PM <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dl('retiree')">+ Add Series</button>
+    </div>
+
+    <div class="card recurring" id="r2">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">2nd<br>SAT</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">Executive Board Meeting</div>
+        <div class="emeta">4:30 PM <span class="emeta-dot">·</span> Thu before 2nd Saturday <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dlExecAll()">+ Add All Dates</button>
+    </div>
+
+    <div class="card recurring" id="r3">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">2nd<br>SAT</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">Skilled Trades Meeting – KCP</div>
+        <div class="emeta">8:30 AM <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dl('skilled')">+ Add Series</button>
+    </div>
+
+    <div class="card recurring" id="r4">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">2nd<br>SAT</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">General Membership Meeting – KCP &amp; DFM</div>
+        <div class="emeta">9:00 AM <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dl('general')">+ Add Series</button>
+    </div>
+
+    <div class="card recurring" id="r5">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">3rd<br>WED</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">SPE Membership Meeting</div>
+        <div class="emeta">6:30 AM <span class="emeta-dot">·</span> Morning Session <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dl('spe-am')">+ Add Series</button>
+    </div>
+
+    <div class="card recurring" id="r6">
+      <div class="dblock"><div class="dmon">EVERY</div><div class="drange">3rd<br>WED</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bm">Meeting</span><span class="badge br">Monthly</span></div>
+        <div class="etitle">SPE Membership Meeting</div>
+        <div class="emeta">6:30 PM <span class="emeta-dot">·</span> Evening Session <span class="emeta-dot">·</span> UAW Hall</div>
+      </div>
+      <button class="btn-add" onclick="dl('spe-pm')">+ Add Series</button>
+    </div>
+  </div>
+
+  <!-- ── HOLIDAYS ── -->
+  <div class="sec-holidays">
+    <h2 class="section-head">
+      <span class="section-icon si-red">🏭</span> Holidays &amp; Plant Closures
+    </h2>
+
+    <div class="month-sep">January</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">JAN</div><div class="drange">1–2</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Christmas Holiday Period</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('jan12','Christmas Holiday Period','20260101','20260103','UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">JAN</div><div class="dday">19</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">MLK Jr. Day</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('mlk','MLK Jr. Day – Plant Closed','20260119','20260120','Martin Luther King Jr. Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">April</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">APR</div><div class="dday">3</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Good Friday</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('goodfri','Good Friday – Plant Closed','20260403','20260404','Good Friday. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">APR</div><div class="dday">6</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Day After Easter</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('easter','Day After Easter – Plant Closed','20260406','20260407','Day after Easter. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">May</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">MAY</div><div class="dday">25</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Memorial Day</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('memorial','Memorial Day – Plant Closed','20260525','20260526','Memorial Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">June</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">JUN</div><div class="dday">19</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Juneteenth</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('juneteenth','Juneteenth – Plant Closed','20260619','20260620','Juneteenth National Independence Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">July</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">JUL</div><div class="dday">3</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Independence Day (Observed)</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('july4','Independence Day (Observed) – Plant Closed','20260703','20260704','Independence Day observed. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">September</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">SEP</div><div class="dday">7</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Labor Day</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('laborday','Labor Day – Plant Closed','20260907','20260908','Labor Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">November</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">NOV</div><div class="dday">3</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Federal Election Day</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('election','Federal Election Day – Plant Closed','20261103','20261104','Federal Election Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">NOV</div><div class="dday">11</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Veterans Day</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('veterans','Veterans Day – Plant Closed','20261111','20261112','Veterans Day. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">NOV</div><div class="drange">26–27</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Thanksgiving Holiday</div>
+        <div class="emeta">Thanksgiving &amp; Day After <span class="emeta-dot">·</span> Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('thanksgiving','Thanksgiving Holiday – Plant Closed','20261126','20261128','Thanksgiving Day and Day After Thanksgiving. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+
+    <div class="month-sep">December</div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">DEC</div><div class="drange">24–25</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Christmas Holiday Period</div>
+        <div class="emeta">Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('xmas1','Christmas Holiday Period – Plant Closed','20261224','20261226','Christmas Holiday Period. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+    <div class="card">
+      <div class="dblock"><div class="dmon">DEC</div><div class="drange">28–<br>Jan 1</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bh">Holiday</span></div>
+        <div class="etitle">Christmas Holiday Period</div>
+        <div class="emeta">Dec 28 through Jan 1 <span class="emeta-dot">·</span> Plant Closed</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('xmas2','Christmas Holiday Period – Plant Closed','20261228','20270102','Christmas Holiday Period. UAW Local 1166 holiday. Plant closed.')">+ Add</button>
+    </div>
+  </div>
+
+  <!-- ── PAY & BENEFITS ── -->
+  <div class="sec-benefits">
+    <h2 class="section-head">
+      <span class="section-icon si-green">💰</span> Pay &amp; Benefits
+    </h2>
+
+    <div class="card">
+      <div class="dblock"><div class="dmon">SEP</div><div class="dday">7</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bb">Pay</span></div>
+        <div class="etitle">3% General Wage Increase Effective</div>
+        <div class="emeta">Per contract terms</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('gwi','3% General Wage Increase Effective','20260907','20260908','UAW Local 1166 General Wage Increase of 3% takes effect per contract terms.')">+ Add</button>
+    </div>
+
+    <div class="card">
+      <div class="dblock"><div class="dmon">DEC</div><div class="dday">4</div></div>
+      <div class="vline"></div>
+      <div class="einfo">
+        <div class="badges"><span class="badge bb">Pay</span></div>
+        <div class="etitle">Presence at Work Award – Payment Date</div>
+        <div class="emeta">Check your eligibility with your rep</div>
+      </div>
+      <button class="btn-add" onclick="dlOne('presaward','Presence at Work Award – Payment Date','20261204','20261205','UAW Local 1166 Presence at Work Award payment date.')">+ Add</button>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="ftr">
+  <img class="ftr-logo" src="https://9453ae.github.io/UAW_1166/UAW%20White%20Logo.svg" alt="UAW" onerror="this.style.display='none'">
+  <div class="ftr-address">
+    <strong style="color:#fff">UAW Local 1166</strong><br>
+    2761 N 50 E, Kokomo, IN 46901
+  </div>
+  <div class="ftr-note">Subscribe above to keep your calendar current automatically · 2026</div>
+</footer>
+
+<div class="toast" id="toast">✓ Calendar event added</div>
+
+<script>
+// ── FILTER ──
+function filter(type) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
+  event.target.classList.add('on');
+  const sm = document.querySelector('.sec-meetings');
+  const sh = document.querySelector('.sec-holidays');
+  const sb = document.querySelector('.sec-benefits');
+  if (type === 'all')      { sm.classList.remove('hidden'); sh.classList.remove('hidden'); sb.classList.remove('hidden'); }
+  if (type === 'meetings') { sm.classList.remove('hidden'); sh.classList.add('hidden');    sb.classList.add('hidden'); }
+  if (type === 'holidays') { sm.classList.add('hidden');    sh.classList.remove('hidden'); sb.classList.add('hidden'); }
+  if (type === 'benefits') { sm.classList.add('hidden');    sh.classList.add('hidden');    sb.classList.remove('hidden'); }
+}
+
+// ── ICS BUILDER ──
+const LOC = 'UAW Local 1166 Hall\\, 2761 N 50 E\\, Kokomo\\, IN 46901';
+const STAMP = '20260227T120000Z';
+
+function buildVevent(uid, summary, dtStart, dtEnd, description, location, rrule) {
+  const allDay = dtStart.length === 8;
+  const ds = allDay ? 'DTSTART;VALUE=DATE:' + dtStart : 'DTSTART;TZID=America/Indiana/Indianapolis:' + dtStart;
+  const de = allDay ? 'DTEND;VALUE=DATE:' + dtEnd   : 'DTEND;TZID=America/Indiana/Indianapolis:' + dtEnd;
+  let lines = ['BEGIN:VEVENT', 'UID:' + uid, 'DTSTAMP:' + STAMP, ds, de, 'SUMMARY:' + summary];
+  if (description) lines.push('DESCRIPTION:' + description);
+  if (location)    lines.push('LOCATION:' + location);
+  if (rrule)       lines.push(rrule);
+  lines.push('END:VEVENT');
+  return lines.join('\r\n');
+}
+
+function buildICS(vevent) {
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//UAW Local 1166//2026 Calendar//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VTIMEZONE',
+    'TZID:America/Indiana/Indianapolis',
+    'BEGIN:DAYLIGHT',
+    'TZOFFSETFROM:-0500',
+    'TZOFFSETTO:-0400',
+    'TZNAME:EDT',
+    'DTSTART:19700308T020000',
+    'RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3',
+    'END:DAYLIGHT',
+    'BEGIN:STANDARD',
+    'TZOFFSETFROM:-0400',
+    'TZOFFSETTO:-0500',
+    'TZNAME:EST',
+    'DTSTART:19701101T020000',
+    'RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11',
+    'END:STANDARD',
+    'END:VTIMEZONE',
+    vevent,
+    'END:VCALENDAR'
+  ].join('\r\n');
+}
+
+function downloadICS(content, filename) {
+  const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+  showToast('✓ Calendar event downloaded');
+}
+
+// ── ONE-TIME EVENT ──
+function dlOne(id, title, start, end, desc) {
+  const ve = buildVevent('uaw1166-' + id + '@uaw1166', title, start, end, desc, LOC, null);
+  downloadICS(buildICS(ve), 'uaw1166-' + id + '.ics');
+}
+
+// ── RECURRING SERIES ──
+const series = {
+  retiree: ['uaw1166-retiree-2026','Retiree Meeting','20260105T170000','20260105T180000','Monthly retiree meeting for UAW Local 1166.','RRULE:FREQ=MONTHLY;BYDAY=1MO;UNTIL=20261231T235959Z','uaw1166-retiree.ics'],
+  skilled: ['uaw1166-skilled-2026','Skilled Trades Meeting – KCP','20260110T083000','20260110T103000','Monthly skilled trades union meeting for KCP members.','RRULE:FREQ=MONTHLY;BYDAY=2SA;UNTIL=20261231T235959Z','uaw1166-skilled.ics'],
+  general: ['uaw1166-general-2026','General Membership Meeting – KCP & DFM','20260110T090000','20260110T110000','Monthly general membership union meeting for KCP and DFM members.','RRULE:FREQ=MONTHLY;BYDAY=2SA;UNTIL=20261231T235959Z','uaw1166-general.ics'],
+  'spe-am': ['uaw1166-spe-am-2026','SPE Membership Meeting (Morning)','20260121T063000','20260121T073000','Monthly SPE membership meeting – morning session.','RRULE:FREQ=MONTHLY;BYDAY=3WE;UNTIL=20261231T235959Z','uaw1166-spe-am.ics'],
+  'spe-pm': ['uaw1166-spe-pm-2026','SPE Membership Meeting (Evening)','20260121T183000','20260121T193000','Monthly SPE membership meeting – evening session.','RRULE:FREQ=MONTHLY;BYDAY=3WE;UNTIL=20261231T235959Z','uaw1166-spe-pm.ics'],
+};
+
+function dl(key) {
+  const s = series[key];
+  const ve = buildVevent(s[0], s[1], s[2], s[3], s[4], LOC, s[5]);
+  downloadICS(buildICS(ve), s[6]);
+}
+
+// ── EXEC BOARD – ALL 12 DATES ──
+const execDates = [
+  ['20260108T163000','20260108T183000'],['20260212T163000','20260212T183000'],
+  ['20260312T163000','20260312T183000'],['20260409T163000','20260409T183000'],
+  ['20260507T163000','20260507T183000'],['20260611T163000','20260611T183000'],
+  ['20260709T163000','20260709T183000'],['20260806T163000','20260806T183000'],
+  ['20260910T163000','20260910T183000'],['20261008T163000','20261008T183000'],
+  ['20261112T163000','20261112T183000'],['20261210T163000','20261210T183000'],
+];
+
+function dlExecAll() {
+  const vevents = execDates.map(([s,e], i) =>
+    buildVevent('uaw1166-exec-' + s.slice(0,8) + '@uaw1166','Executive Board Meeting', s, e,
+      'Executive Board Meeting – Thursday before the 2nd Saturday union meeting.', LOC, null)
+  ).join('\r\n');
+
+  const ics = [
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//UAW Local 1166//2026 Calendar//EN',
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VTIMEZONE','TZID:America/Indiana/Indianapolis',
+    'BEGIN:DAYLIGHT','TZOFFSETFROM:-0500','TZOFFSETTO:-0400','TZNAME:EDT',
+    'DTSTART:19700308T020000','RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3','END:DAYLIGHT',
+    'BEGIN:STANDARD','TZOFFSETFROM:-0400','TZOFFSETTO:-0500','TZNAME:EST',
+    'DTSTART:19701101T020000','RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11','END:STANDARD',
+    'END:VTIMEZONE',
+    vevents,
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  downloadICS(ics, 'uaw1166-exec-board-2026.ics');
+}
+
+// ── TOAST ──
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+</script>
+</body>
+</html>

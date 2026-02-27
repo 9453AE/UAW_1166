@@ -1,0 +1,337 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UAW Local 1166//2026 Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UAW Local 1166 – 2026
+X-WR-CALDESC:Official calendar for UAW Local 1166 members. Kokomo, Indiana.
+X-WR-TIMEZONE:America/Indiana/Indianapolis
+BEGIN:VTIMEZONE
+TZID:America/Indiana/Indianapolis
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+UID:uaw1166-retiree-meeting-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260105T170000
+DTEND;TZID=America/Indiana/Indianapolis:20260105T180000
+RRULE:FREQ=MONTHLY;BYDAY=1MO;UNTIL=20261231T235959Z
+SUMMARY:Retiree Meeting
+DESCRIPTION:Monthly retiree meeting for UAW Local 1166.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-skilled-trades-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260110T083000
+DTEND;TZID=America/Indiana/Indianapolis:20260110T103000
+RRULE:FREQ=MONTHLY;BYDAY=2SA;UNTIL=20261231T235959Z
+SUMMARY:Skilled Trades Meeting – KCP
+DESCRIPTION:Monthly skilled trades union meeting for KCP members.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-general-membership-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260110T090000
+DTEND;TZID=America/Indiana/Indianapolis:20260110T110000
+RRULE:FREQ=MONTHLY;BYDAY=2SA;UNTIL=20261231T235959Z
+SUMMARY:General Membership Meeting – KCP & DFM
+DESCRIPTION:Monthly general membership union meeting for KCP and DFM members.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-spe-am-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260121T063000
+DTEND;TZID=America/Indiana/Indianapolis:20260121T073000
+RRULE:FREQ=MONTHLY;BYDAY=3WE;UNTIL=20261231T235959Z
+SUMMARY:SPE Membership Meeting (Morning)
+DESCRIPTION:Monthly SPE membership meeting – morning session. 3rd Wednesday of every month.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-spe-pm-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260121T183000
+DTEND;TZID=America/Indiana/Indianapolis:20260121T193000
+RRULE:FREQ=MONTHLY;BYDAY=3WE;UNTIL=20261231T235959Z
+SUMMARY:SPE Membership Meeting (Evening)
+DESCRIPTION:Monthly SPE membership meeting – evening session. 3rd Wednesday of every month.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260108@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260108T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260108T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260212@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260212T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260212T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260312@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260312T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260312T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260409@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260409T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260409T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260507@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260507T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260507T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260611@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260611T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260611T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260709@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260709T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260709T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260806@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260806T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260806T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20260910@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260910T163000
+DTEND;TZID=America/Indiana/Indianapolis:20260910T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20261008@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20261008T163000
+DTEND;TZID=America/Indiana/Indianapolis:20261008T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20261112@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20261112T163000
+DTEND;TZID=America/Indiana/Indianapolis:20261112T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-exec-board-20261210@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;TZID=America/Indiana/Indianapolis:20261210T163000
+DTEND;TZID=America/Indiana/Indianapolis:20261210T183000
+SUMMARY:Executive Board Meeting
+DESCRIPTION:Executive Board Meeting – Thursday before the 2nd Saturday union meeting.
+LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-jan1-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260103
+SUMMARY:Christmas Holiday Period – Plant Closed
+DESCRIPTION:UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-mlk-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+SUMMARY:MLK Jr. Day – Plant Closed
+DESCRIPTION:Martin Luther King Jr. Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-goodfriday-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Good Friday – Plant Closed
+DESCRIPTION:Good Friday. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-aftereaster-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+SUMMARY:Day After Easter – Plant Closed
+DESCRIPTION:Day after Easter. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-memorial-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+SUMMARY:Memorial Day – Plant Closed
+DESCRIPTION:Memorial Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-juneteenth-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:Juneteenth – Plant Closed
+DESCRIPTION:Juneteenth National Independence Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-july4-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:Independence Day (Observed) – Plant Closed
+DESCRIPTION:Independence Day observed. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-laborday-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Labor Day – Plant Closed
+DESCRIPTION:Labor Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-gwi-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:3% General Wage Increase Effective
+DESCRIPTION:UAW Local 1166 General Wage Increase of 3% takes effect per contract.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-election-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Federal Election Day – Plant Closed
+DESCRIPTION:Federal Election Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-veterans-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Veterans Day – Plant Closed
+DESCRIPTION:Veterans Day. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-thanksgiving-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261128
+SUMMARY:Thanksgiving Holiday – Plant Closed
+DESCRIPTION:Thanksgiving Day and Day After Thanksgiving. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-presence-award-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Presence at Work Award – Payment Date
+DESCRIPTION:UAW Local 1166 Presence at Work Award payment date.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-xmas1-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261226
+SUMMARY:Christmas Holiday Period – Plant Closed
+DESCRIPTION:Christmas Holiday Period. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:uaw1166-holiday-xmas2-2026@uaw1166
+DTSTAMP:20260227T120000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20270102
+SUMMARY:Christmas Holiday Period – Plant Closed
+DESCRIPTION:Christmas Holiday Period. UAW Local 1166 holiday. Plant closed.
+END:VEVENT
+
+END:VCALENDAR
