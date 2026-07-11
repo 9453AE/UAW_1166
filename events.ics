@@ -49,11 +49,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:uaw1166-spe-am-2026@uaw1166
 DTSTAMP:20260227T120000Z
-DTSTART;TZID=America/Indiana/Indianapolis:20260120T090000
-DTEND;TZID=America/Indiana/Indianapolis:20260120T100000
-RRULE:FREQ=MONTHLY;BYDAY=3TU;UNTIL=20261231T235959Z
+DTSTART;TZID=America/Indiana/Indianapolis:20260113T090000
+DTEND;TZID=America/Indiana/Indianapolis:20260113T100000
+RRULE:FREQ=MONTHLY;BYDAY=TU;BYMONTHDAY=11,12,13,14,15,16,17;UNTIL=20261231T235959Z
 SUMMARY:SPE Membership Meeting (Morning)
-DESCRIPTION:Monthly SPE membership meeting – morning session. 3rd Tuesday of every month.
+DESCRIPTION:Monthly SPE membership meeting – morning session. Tuesday following the General Membership Meeting.
 LOCATION:UAW Local 1166 Hall\, 2761 N 50 E\, Kokomo\, IN 46901
 END:VEVENT
 
